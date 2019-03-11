@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>DevrajServ</servlet-name>
+        <servlet-class>DevrajServ</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>WelcomeServ</servlet-name>
+        <servlet-class>WelcomeServ</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddServ</servlet-name>
+        <servlet-class>AddServ</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DevrajServ</servlet-name>
+        <url-pattern>/DevrajServ</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WelcomeServ</servlet-name>
+        <url-pattern>/WelcomeServ</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddServ</servlet-name>
+        <url-pattern>/AddServ</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
